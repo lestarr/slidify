@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction of house prices</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Prediction of house prices">
+  <meta name="author" content="lestarr">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Prediction of house prices</h1>
+    <h2>Presentation of the app</h2>
+    <p>lestarr<br/>Computational linguist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>App description</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The presented app is very simple, it simulates the calculating of house price based on room number and location.</p>
+
+<p>The user can select or change the number of bedrooms and the neighbarhood of the location in the left panel.</p>
+
+<p>In the right panel the choices are presented again and the predicted house price appears below the title</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data and modelling</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For the model the Boston data set from the MASS package was used. It contains 14 features and 506 data sets. The features describe the size and age of the property objects as well as location, population and ecology.</p>
+
+<p>The model uses only 2 features: room number and lstat - feature which describes the percentage of the lower status population. </p>
+
+<p>The motivation for that is that most statistical indexes are not handy for the user who just wants to enquire how much a house in different locations could cost. Instead the room number and the some idea of the goodness of the location are the first features to play with.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Data and modelling</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The following 2 plots illustrate the correlation between the house price and selected features, so the model build on them should not be too bad and serve a purpose of this simple simulation.</p>
+
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Showing app</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The location has to be estimated by user. There are 4 kinds of possible choices: welthy district, upper middle, middle and poor. This choices are heuristically turned into the values for lstat. </p>
+
+<p>The submit button was refused to make playing with the app easier.</p>
+
+<p>Here is the print screen of the app:
+<img src="app_ui_small.png" alt="appui"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='App description'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data and modelling'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Data and modelling'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Showing app'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -1,0 +1,7 @@
+name: Publish Document
+account: rpubs
+server: rpubs.com
+bundleId:
+        https://api.rpubs.com/api/v1/document/155737/ac442c7320ab4f8182defb5044a5b485
+url: http://rpubs.com/lestarr/155737
+when: 1456412540.0955
